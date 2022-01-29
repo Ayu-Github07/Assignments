@@ -6,3 +6,9 @@ Assignments related to Java Full Stack Developer with Angular
 
 ### Submitted MongoDB Assignment on 12/01/2022
 - Check inside MongoDB Assignment Repo for the submissions
+
+### Submitted Core Java 11 Assignment on 28/01/2022
+- Check inside Core Java 11 Assignment Repo for the submissions
+
+### Submitted JUnit-5 & Mockito Assignment on 31/01/2022
+- Check inside JUnit-5 & Mockito Assignment Repo for the submissions
