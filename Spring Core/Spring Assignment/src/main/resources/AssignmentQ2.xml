@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns="http://www.springframework.org/schema/beans"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context.xsd
+   http://www.springframework.org/schema/util
+   http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+<!--    creating bean for class Question1-->
+    <bean class="org.example.AssignmentQ2.Question1" name="question1">
+        <property name="questionId" value="1"/>
+        <property name="question" value="What is Spring Framework?"/>
+        <property name="answers">
+            <list>
+                <value>Spring is a powerful open-source, loosely coupled, lightweight, java framework meant for reducing the complexity of developing enterprise-level applications.</value>
+                <value>This framework is also called the “framework of frameworks” as spring provides support to various other important frameworks like JSF, Hibernate, Structs, EJB, etc.</value>
+                <value>Spring handles all the infrastructure-related aspects which lets the programmer focus mostly on application development.</value>
+            </list>
+        </property>
+    </bean>
+
+<!--    creating a bean for class Question2-->
+    <bean class="org.example.AssignmentQ2.Question2" name="question2">
+        <property name="questionId" value="2"/>
+        <property name="question" value="What are the features of Spring Framework?"/>
+        <property name="answers">
+            <set>
+                <value>Spring is a lightweight, java based, loosely coupled framework.</value>
+                <value>Spring provides generic abstraction layer for transaction management that is also very useful for container-less environments.</value>
+            </set>
+        </property>
+    </bean>
+
+<!--    creating a bean for class Question3-->
+    <bean class="org.example.AssignmentQ2.Question3" name="question3">
+        <property name="questionId" value="3"/>
+        <property name="questionName" value="Explain the difference between constructor and setter injection?"/>
+        <property name="answers">
+            <map>
+                <entry key="1">
+                    <value>In constructor injection, partial injection is not allowed whereas it is allowed in setter injection.</value>
+                </entry>
+                <entry key="2">
+                    <value>The constructor injection doesn’t override the setter property whereas the same is not true for setter injection.</value>
+                </entry>
+                <entry key="3">
+                    <value>Constructor injection creates a new instance if any modification is done. The creation of a new instance is not possible in setter injection.</value>
+                </entry>
+                <entry key="4">
+                    <value>In case the bean has many properties, then constructor injection is preferred. If it has few properties, then setter injection is preferred.</value>
+                </entry>
+
+            </map>
+        </property>
+    </bean>
+</beans>
