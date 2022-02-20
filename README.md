@@ -19,3 +19,6 @@ Assignments related to Java Full Stack Developer with Angular
 
 ### Submitted Spring MVC Assignment on 08/02/2022
 - Check inside Spring MVC Assignment Repo for the submissions
+
+### Submitted Spring REST Assignment on 14/02/2022
+- Check inside Spring REST Assignment Repo for the submissions
