@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+}
+
+.container {
+    margin: 20px 40px;
+    border: 2px solid;
+    width: fit-content;
+    padding: 20px;
+}
+
+.table {
+    padding: 10px;
+}
+
+table,
+td,
+th {
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 10px;
+}

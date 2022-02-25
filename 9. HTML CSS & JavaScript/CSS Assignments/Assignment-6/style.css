@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+}
+
+.container {
+    margin: 20px 40px;
+    border: 2px solid;
+    width: fit-content;
+    padding: 20px;
+}
+
+.table {
+    padding: 10px;
+}
+
+table,
+td,
+th {
+    border-bottom: 1px ridge;
+
+    border-collapse: collapse;
+}
+
+th {
+    background-color: rgb(0, 195, 255);
+    font-weight: 700;
+    padding: 15px;
+}
+
+tr:nth-child(even) {
+    background-color: #a3e0f8;
+}
+
+td {
+    padding: 10px;
+}

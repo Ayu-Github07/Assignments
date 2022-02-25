@@ -1,0 +1,23 @@
+* {
+    margin: 0%;
+    font-weight: 100;
+}
+
+.container {
+    margin: 10px 30px;
+    padding: 20px;
+    border: 1px solid;
+    width: fit-content;
+    background-color: rgb(159, 247, 247);
+
+}
+
+.heading {
+    padding: 10px;
+    border: 3px solid rgb(247, 70, 70);
+    outline: 5px dotted orange;
+}
+
+span {
+    font-weight: bold;
+}
