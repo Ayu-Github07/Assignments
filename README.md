@@ -25,3 +25,6 @@ Assignments related to Java Full Stack Developer with Angular
 
 ### Submitted Spring Security Assignment on 21/02/2022
 - Check inside Spring Security Assignment Repo for the submissions
+
+### Submitted HTML & CSS Assignment on 26/02/2022
+- Check inside HTML CSS & JavaScript Assignment Repo for the submissions
