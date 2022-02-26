@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Libre+Baskerville:wght@700&family=Pinyon+Script&family=Poppins:ital,wght@1,500&family=Racing+Sans+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: black;
+    overflow: hidden;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar {
+    border-top: 4px solid #fdb927;
+    position: fixed;
+    background: black;
+    width: 100%;
+    padding: 10px 0 20px 0;
+    font-family: 'Racing Sans One', sans-serif;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 30px;
+}
+
+.navbar .menu li a {
+    color: #fff;
+}
+
+.logo {
+    color: #fdb927;
+    font-size: 1.8rem;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.logo span {
+    margin: 0;
+}
+
+/* HOME SECTION STYLING */
+.home {
+    display: flex;
+    background: url("images/virat-kohli.png") no-repeat right;
+    height: 100vh;
+    color: #fff;
+    min-height: 770px;
+    font-family: 'Libre Baskerville', serif;
+
+}
+
+.home .max-width {
+    margin: auto 0 auto 20px;
+}
+
+.home .home-content .text-1 {
+    margin-bottom: 15px;
+    font-size: 37px;
+}
+
+.home .home-content .text-2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    font-weight: 100;
+    color: #fdb927;
+    font-weight: 600;
+    margin-left: -3px;
+    margin-bottom: 30px;
+}
+
+.home .home-content .text-3 {
+    font-size: 20px;
+    margin: 5px 0;
+    color: #fff;
+}

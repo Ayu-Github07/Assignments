@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+    --yellow: #F7CA3E;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+*::selection {
+    background: var(--yellow);
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #333;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--yellow);
+}
+
+.btn {
+    font-size: 1.7rem;
+    padding: .7rem 4rem;
+    border-radius: 5rem;
+    margin-top: 1rem;
+    background: none;
+    color: #333;
+    cursor: pointer;
+    border: .2rem solid var(--yellow);
+}
+
+.btn:hover {
+    background-color: var(--yellow);
+}
+
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    padding: 0 .5rem;
+    color: #333;
+}
+
+.heading span {
+    color: var(--yellow);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    background: #fff;
+    padding: 1.5rem 10%;
+    box-shadow: 0 .3rem 2rem rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img {
+    height: 5rem;
+}
+
+header .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+header .navbar ul li {
+    padding-left: 3rem;
+}
+
+header .navbar ul li a {
+    font-size: 1.7rem;
+    color: #666;
+    text-decoration: none;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover {
+    color: var(--yellow);
+}
+
+header #menu-bar {
+    font-size: 3rem;
+    color: #666;
+    cursor: pointer;
+    display: none;
+}
+
+/* Home Section  */
+section {
+    min-height: 100vh;
+    padding: 1rem 10%;
+    padding-top: 8.5rem;
+}
+
+.home {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.home::before,
+.home::after {
+    content: '';
+    position: absolute;
+    top: 5rem;
+    right: -6rem;
+    background: var(--yellow);
+    border-radius: 3rem;
+    transform: rotate(-45deg);
+    height: 40rem;
+    width: 70rem;
+    z-index: -2;
+    animation: animate 1s linear 1;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(-45deg) translateY(-40rem);
+    }
+}
+
+.home::before {
+    top: -7rem;
+    background: #fff;
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, .1);
+    z-index: -1;
+}
+
+.home .image {
+    flex: 1 1 39rem;
+}
+
+.home .image img {
+    width: 100%;
+}
+
+.home .content {
+
+    flex: 1 1 39rem;
+}
+
+.home .content h3 {
+    font-family: 'Oswald', sans-serif;
+    color: #333;
+    font-size: 6rem;
+}
+
+.home .content p {
+    font-family: 'Oswald', sans-serif;
+    color: #666;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.about .image {
+    display: block;
+    flex: 1 1 40rem;
+    height: 50rem;
+    background: url("images/complete website 25/about-frame-img.png"), url("images/complete website 25/about-img.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: screen;
+}
+
+.about .content {
+    font-family: 'Oswald', sans-serif;
+    flex: 1 1 40rem;
+    padding: 2rem;
+}
+
+.about .content h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+    color: #333;
+}
+
+.about .content p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.menu .list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 1rem 0;
+    margin: 2rem 0;
+    border-top: .3rem dashed rgba(0, 0, 0, .2);
+    border-bottom: .3rem dashed rgba(0, 0, 0, .2);
+}
+
+.menu .list .btn {
+    margin: 1rem;
+}
+
+.menu .list .btn:active,
+.menu .list .btn:hover {
+    background: var(--yellow);
+    color: #fff;
+}
+
+.menu .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.menu .row .image {
+    margin: 2rem;
+    padding: 2rem;
+    flex: 1 1 40rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .2);
+
+}
+
+.menu .row .image img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.menu .row .content {
+    flex: 1 1 40rem;
+}
+
+.menu .row .content .info {
+    padding: 1rem 0;
+}
+
+.menu .row .content .info h3 {
+    display: flex;
+    align-items: center;
+    font-size: 2.4rem;
+    color: #333;
+}
+
+.menu .row .content .info h3 span {
+    padding-right: 1rem;
+    color: var(--yellow);
+}
+
+.menu .row .content .info p {
+    padding: 1rem 0;
+    padding-left: 4.5rem;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mdeia queries */
+
+@media(max-width:1200px) {
+    html {
+        font-size: 53%;
+    }
+
+    .home::before,
+    .home::after {
+        display: none;
+    }
+}
+
+@media(max-width:760px) {
+    html {
+        font-size: 53%;
+    }
+
+    header #menu-bar {
+        display: block;
+    }
+
+    header .navbar {
+        position: fixed;
+        top: 8rem;
+        left: 0;
+        width: 100%;
+        background: var(--yellow);
+        border-top: .2rem solid rgba(0, 0, 0, .1);
+        transform: scaleY(0);
+        transform-origin: top;
+        opacity: 0;
+    }
+
+    header .navbar ul {
+        flex-flow: column;
+        padding: 2rem;
+    }
+
+    header .navbar ul li {
+        margin: 1.5rem;
+        width: 100%;
+    }
+
+    header .navbar ul li a {
+        display: block;
+        color: #fff;
+        padding-left: 2rem;
+        border-left: 2rem solid #fff;
+        font-size: 2rem;
+    }
+
+    header .navbar ul li a.active,
+    header .navbar ul li a:hover {
+        color: #333;
+        border-color: #333;
+    }
+
+    .fa-times {
+        transform: rotate(180deg);
+    }
+
+    header .navbar .nav-toggle {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    .home .content {
+        text-align: center;
+    }
+
+    .home .content h3 {
+        font-size: 4.5rem;
+    }
+}
