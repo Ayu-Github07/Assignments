@@ -1,0 +1,40 @@
+<h1 mat-dialog-title>{{title}}</h1>
+
+<form [formGroup]="restaurantForm">
+    <div mat-dialog-content>
+        <mat-form-field appearance="outline">
+            <mat-label>Enter Restaurant's Name</mat-label>
+            <input matInput placeholder="Restaurant Name" formControlName="restaurantName">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Enter Owner's Name</mat-label>
+            <input matInput placeholder="Owner Name" formControlName="ownerName">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Enter Location</mat-label>
+            <input matInput placeholder="City" formControlName="location">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Enter Speciality</mat-label>
+            <input matInput placeholder="Speciality" formControlName="speciality">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Restaurant Type</mat-label>
+            <mat-select formControlName="type" placeholder="Category">
+                <mat-option value="Italian">Italian</mat-option>
+                <mat-option value="Chinese">Chinese</mat-option>
+                <mat-option value="Indian">Indian</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+    </div>
+</form>
+
+<div class="buttons" mat-dialog-action [align]="'end'">
+    <button style="margin-right: 20px;" mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <button class="save" mat-raised-button color="primary" (click)="addRestaurant()">{{btnAction}}</button>
+</div>

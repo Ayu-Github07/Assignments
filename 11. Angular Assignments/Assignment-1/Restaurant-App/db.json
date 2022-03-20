@@ -1,0 +1,38 @@
+{
+  "addList": [
+    {
+      "restaurantName": "Delicious World",
+      "ownerName": "Kabir Singh",
+      "location": "Korba",
+      "speciality": "Spring Roll",
+      "type": "Chinese",
+      "id": 2
+    },
+    {
+      "restaurantName": "Raju Hotel",
+      "ownerName": "Aman Gupta",
+      "location": "Korba",
+      "speciality": "Paneer Butter Masala",
+      "type": "Indian",
+      "id": 3
+    },
+    {
+      "restaurantName": "Relax Inn",
+      "ownerName": "Ayush Agrawal",
+      "location": "Raipur",
+      "speciality": "Everything",
+      "type": "Italian",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
