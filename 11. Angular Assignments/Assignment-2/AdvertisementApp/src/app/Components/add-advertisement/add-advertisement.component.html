@@ -1,0 +1,42 @@
+<h1 mat-dialog-title>{{title}}</h1>
+
+<form [formGroup]="addvertisementForm">
+    <div mat-dialog-content>
+        <mat-form-field appearance="outline">
+            <mat-label>Enter the Title</mat-label>
+            <input formControlName="addTitle" matInput placeholder="Title">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Enter the Name</mat-label>
+            <input formControlName="addName" matInput placeholder="Name">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Choose a date</mat-label>
+            <input formControlName="date" matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Category of Ad</mat-label>
+            <mat-select formControlName="category" placeholder="Category">
+                <mat-option value="Furniture">Furniture</mat-option>
+                <mat-option value="Hardware">Hardware</mat-option>
+                <mat-option value="Mobile">Mobile</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Description</mat-label>
+            <textarea formControlName="description" matInput></textarea>
+        </mat-form-field>
+    </div>
+
+</form>
+
+<div class="buttons" mat-dialog-action [align]="'end'">
+    <button style="margin-right: 20px;" mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <button class="save" mat-raised-button color="primary" (click)="addAddvertisement()">{{actionBtn}}</button>
+</div>
